@@ -7,5 +7,6 @@
   */
 function xml2arr ($xml)
 {
-    return (array) simplexml_load_string($xml);
+    libxml_disable_entity_loader(true);
+    return (array)simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
 }
