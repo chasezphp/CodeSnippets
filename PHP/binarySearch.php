@@ -5,7 +5,7 @@
  * @param array $sorted_array The sorted array you want to search.
  * @return int
  */
-function dichotomySearch($target, $sorted_array)
+function binarySearch($target, $sorted_array)
 {
     $head = 0;
     $tail = count($sorted_array) - 1;
@@ -28,4 +28,4 @@ function dichotomySearch($target, $sorted_array)
 
 $sorted_array = [1,2,4,5,7,9,12,20];
 $target = 5;
-var_dump(dichotomySearch($target, $sorted_array));
+var_dump(binarySearch($target, $sorted_array));
