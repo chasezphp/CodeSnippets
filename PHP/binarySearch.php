@@ -1,6 +1,9 @@
 <?php
 /**
  * Searching a value from a sorted array with dichotomy method.
+ *
+ * Keywords: median
+ *
  * @param int $target The value you want to find.
  * @param array $sorted_array The sorted array you want to search.
  * @return int
