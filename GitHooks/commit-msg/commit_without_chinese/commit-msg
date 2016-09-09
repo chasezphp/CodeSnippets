@@ -1,0 +1,8 @@
+#!/bin/sh
+cur=`pwd`
+php $cur/.git/hooks/commit-check.php --commit-file=$1
+ret_code=$?
+
+if [ $ret_code -gt 0 ];then
+    exit 1
+fi
