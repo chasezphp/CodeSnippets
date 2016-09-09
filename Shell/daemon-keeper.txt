@@ -1,0 +1,18 @@
+Deamon Keeper 1.0
+
+Usage: 
+    dk -s <action> -f <file> -t <seconds> -d
+    dk -h
+    dk -v
+
+Example:
+    eg1: nohup dk -s start -f ./jobs.txt -d -t 3 &
+    eg2: dk -s stop -f ./jobs.txt
+
+Options:
+    -s <action>         The action you want to do.It can be: start, stop, restart.
+    -f <file>           The job list to be kept
+    -t <second>         The interval of checking.
+    -d                  Running as a daemon.Only when -s is set to start or stop.
+    -v                  Print the version.
+    -h                  Print this document.
